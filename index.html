@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>DLR Conference Agenda</title>
+		
+		<link  href="mobile.css" rel="stylesheet" type="text/css" media="screen" />
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		
+		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js'></script>
+		
+
+		<script type="text/javascript">
+			$(function() {
+			     $('.accordion_content').hide();
+			     $('.accordion_toggle a').click(function(e){
+			          if($(this).parent().hasClass('current')) {
+			               $(this).parent()
+			                   .removeClass('current')
+			                   .next('.accordion_content').slideUp();
+			          } else {
+			               $(document).find('.current')
+			                    .removeClass('current')
+			                    .next('.accordion_content').slideUp();
+			              $(this).parent()
+			                    .addClass('current')
+			                    .next('.accordion_content').slideDown();
+			          }
+			          e.preventDefault();
+			      });
+			});
+		</script>
+		
+	</head>
+	
+	
+	<body>
+	
+		<div id="banner">
+		
+			<h1>OpenVA DLR Conference Agenda</h1>
+		
+			
+		</div>
+		
+		<div id="main">
+		
+		
+		
+		
+		<div class="entry">
+			<p  class="accordion_toggle"><a href="#">8:30AM-9:00AM</br><span>Registration</span></a></p>
+				<div class="accordion_content">
+					<div class="content_backer">
+					<p>Conference Attendees Can Check In</p>
+					</div>
+				</div>
+		</div>
+		
+		
+		<div class="entry">
+			<p  class="accordion_toggle"><a href="#">9:00AM-9:30AM</br><span>Welcoming Remarks</span></a></p>
+				<div class="accordion_content">
+					<div class="content_backer">
+					<p>Welcoming Remarks Featuring Secretary of Education Laura W. Fornash
+</p>
+					</div>
+				</div>
+		</div>
+		
+		<div class="entry">
+			<p  class="accordion_toggle"><a href="#">TIME</br><span>TITLE</span></a></p>
+				<div class="accordion_content">
+					<div class="content_backer">
+					<p>DETAILS</p>
+					</div>
+				</div>
+		</div>
+		
+		
+		
+		
+			
+		</div>
+		
+			<div id="footer">
+		
+			<p>Digital Learning Resources Conference</p>
+			<p>March 5, 2013</p>
+		
+		</div>
+	</body>
+</html>
